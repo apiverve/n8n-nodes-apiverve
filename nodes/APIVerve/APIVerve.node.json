@@ -1,0 +1,37 @@
+{
+	"node": "n8n-nodes-base.apiVerve",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": [
+		"Utility",
+		"Data & Storage"
+	],
+	"resources": {
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.apiverve.com"
+			}
+		],
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.apiverve.com/authentication"
+			}
+		]
+	},
+	"alias": [
+		"api",
+		"validation",
+		"utility",
+		"email",
+		"phone",
+		"currency",
+		"qr",
+		"ip"
+	],
+	"subcategories": {
+		"Utility": [
+			"Data Transformation",
+			"Other"
+		]
+	}
+}
