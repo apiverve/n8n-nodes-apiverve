@@ -1,0 +1,12 @@
+nodes/
+credentials/
+*.ts
+!dist/**/*.js
+tsconfig.json
+.eslintrc.js
+.prettierrc.js
+gulpfile.js
+.github/
+docs/
+*.md
+!README.md
