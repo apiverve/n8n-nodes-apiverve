@@ -22,7 +22,9 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          # 22, not 20: n8n-workflow pulls in isolated-vm, which needs node >=22 and
+          # fails to compile otherwise. This only shows up in CI — local node is newer.
+          node-version: '22'
           registry-url: 'https://registry.npmjs.org'
 
       - name: Install dependencies
