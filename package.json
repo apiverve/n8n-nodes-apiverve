@@ -1,6 +1,6 @@
 {
 	"name": "@apiverve/n8n-nodes-apiverve",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"description": "n8n community node for APIVerve - Access 356+ utility APIs for validation, conversion, generation, and more",
 	"keywords": [
 		"n8n-community-node-package",
@@ -15,7 +15,8 @@
 	"license": "MIT",
 	"homepage": "https://github.com/apiverve/n8n-nodes-apiverve",
 	"author": {
-		"name": "APIVerve"
+		"name": "APIVerve",
+		"email": "support@apiverve.com"
 	},
 	"repository": {
 		"type": "git",
@@ -44,6 +45,9 @@
 		"nodes": [
 			"dist/nodes/APIVerve/APIVerve.node.js"
 		]
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
 	},
 	"devDependencies": {
 		"@types/node": "^20.0.0",
