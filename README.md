@@ -6,7 +6,7 @@
 
 This is an [n8n](https://n8n.io) community node that lets you use [APIVerve](https://apiverve.com) in your n8n workflows.
 
-[APIVerve](https://apiverve.com) provides 310+ fast, reliable utility APIs for validation, conversion, generation, analysis, and lookup operations. One node, hundreds of APIs.
+[APIVerve](https://apiverve.com) provides 356+ fast, reliable utility APIs for validation, conversion, generation, analysis, and lookup operations. One node, hundreds of APIs.
 
 [n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/reference/license/) workflow automation platform.
 
@@ -21,11 +21,13 @@ This is an [n8n](https://n8n.io) community node that lets you use [APIVerve](htt
   - [Self-hosted n8n (Docker)](#self-hosted-n8n-docker)
 - [Credentials](#credentials)
 - [Operations](#operations)
+  - [API Resource](#api-resource)
+  - [JSON Bin Resource](#json-bin-resource)
+  - [Analytics Resource](#analytics-resource)
 - [Node Reference](#node-reference)
   - [API Selection](#api-selection)
   - [Parameters](#parameters)
-  - [Options](#options)
-- [Usage Examples](#usage-examples)
+- [Usage Example](#usage-example)
 - [Response Format](#response-format)
 - [Error Handling](#error-handling)
 - [Development](#development)
@@ -117,11 +119,15 @@ Your OAuth2 tokens will be automatically managed and refreshed by n8n.
 
 ## Operations
 
-The APIVerve node provides a single, dynamic operation that can execute any of the 310+ available APIs:
+The APIVerve node provides three resources:
+
+### API Resource
+
+Execute any of the 356+ available APIs:
 
 | Operation | Description |
 |-----------|-------------|
-| **Execute API** | Run any APIVerve API with custom parameters |
+| **Execute** | Run any APIVerve API with custom parameters |
 
 APIs are organized into 29 categories including:
 
@@ -131,7 +137,27 @@ APIs are organized into 29 categories including:
 - **Analysis** — Sentiment, language detection, readability, SEO analysis
 - **Lookup** — IP geolocation, DNS, WHOIS, weather, zip codes
 
-[Browse all 310+ APIs →](https://apiverve.com/marketplace)
+[Browse all 356+ APIs →](https://apiverve.com/marketplace)
+
+### JSON Bin Resource
+
+Store and retrieve JSON data:
+
+| Operation | Description |
+|-----------|-------------|
+| **List** | List all JSON Bins |
+| **Get** | Get a JSON Bin by ID |
+| **Update** | Update a JSON Bin |
+
+Create and delete Bins in the [APIVerve Dashboard](https://dashboard.apiverve.com/vervekit/jsonbin).
+
+### Analytics Resource
+
+View usage statistics (Pro+ plans):
+
+| Operation | Description |
+|-----------|-------------|
+| **Get Current Usage** | Get current usage statistics |
 
 ---
 
@@ -379,7 +405,7 @@ This node has been tested with:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0.0 | 2025-12-19 | Initial release with 310+ APIs |
+| 1.0.0 | 2026-07-17 | Initial release with 356+ APIs |
 
 ---
 
@@ -387,4 +413,4 @@ This node has been tested with:
 
 [MIT](LICENSE)
 
-Copyright (c) 2025 [EvlarSoft LLC and APIVerve](https://apiverve.com)
+Copyright (c) 2026 [EvlarSoft LLC and APIVerve](https://apiverve.com)
