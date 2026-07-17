@@ -1,0 +1,68 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+# id-token lets npm attach a provenance attestation. n8n refuses to verify any
+# community node published without one (required since 2026-05-01), and provenance
+# can only be generated from CI — never from a local npm publish.
+permissions:
+  contents: write
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
+
+      # Refuse to publish if the tag and package.json disagree — the tag is what
+      # triggers this, so a mismatch would silently ship the wrong version.
+      - name: Verify tag matches package.json
+        run: |
+          TAG="${GITHUB_REF#refs/tags/v}"
+          PKG="$(node -p "require('./package.json').version")"
+          if [ "$TAG" != "$PKG" ]; then
+            echo "Tag v$TAG does not match package.json version $PKG"
+            exit 1
+          fi
+
+      - name: Publish to npm
+        run: npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          body: |
+            ## Installation
+
+            \`\`\`bash
+            npm install @apiverve/n8n-nodes-apiverve
+            \`\`\`
+
+            Or install via n8n Community Nodes UI.
+
+            ---
+            📦 [View on npm](https://www.npmjs.com/package/@apiverve/n8n-nodes-apiverve)
+            📖 [Documentation](https://docs.apiverve.com)
