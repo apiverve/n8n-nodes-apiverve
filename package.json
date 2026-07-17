@@ -1,6 +1,6 @@
 {
 	"name": "@apiverve/n8n-nodes-apiverve",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"description": "n8n community node for APIVerve - Access 356+ utility APIs for validation, conversion, generation, and more",
 	"keywords": [
 		"n8n-community-node-package",
@@ -29,8 +29,8 @@
 		"build": "tsc && gulp build:icons",
 		"dev": "tsc --watch",
 		"format": "prettier nodes credentials --write",
-		"lint": "eslint nodes credentials package.json",
-		"lintfix": "eslint nodes credentials package.json --fix",
+		"lint": "eslint nodes credentials package.json --ext .ts,.js",
+		"lintfix": "eslint nodes credentials package.json --ext .ts,.js --fix",
 		"prepublishOnly": "npm run build"
 	},
 	"files": [
@@ -47,6 +47,8 @@
 	},
 	"devDependencies": {
 		"@types/node": "^20.0.0",
+		"@typescript-eslint/eslint-plugin": "^7.18.0",
+		"@typescript-eslint/parser": "^7.18.0",
 		"eslint": "^8.56.0",
 		"eslint-plugin-n8n-nodes-base": "^1.16.1",
 		"gulp": "^4.0.2",
