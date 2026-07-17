@@ -1,7 +1,7 @@
 {
 	"name": "@apiverve/n8n-nodes-apiverve",
-	"version": "0.0.2",
-	"description": "n8n community node for APIVerve - Access 300+ utility APIs for validation, conversion, generation, and more",
+	"version": "0.2.0",
+	"description": "n8n community node for APIVerve - Access 356+ utility APIs for validation, conversion, generation, and more",
 	"keywords": [
 		"n8n-community-node-package",
 		"n8n-nodes",
