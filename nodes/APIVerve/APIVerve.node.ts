@@ -13,7 +13,7 @@ import {
  * APIVerve Node
  *
  * Resources:
- * - API: Execute any of 356+ utility APIs
+ * - API: Execute any of 387+ utility APIs
  * - JSON Bin: Read/write JSON storage bins
  * - Analytics: View usage statistics
  *
@@ -28,7 +28,7 @@ export class APIVerve implements INodeType {
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{$parameter["resource"] + ": " + $parameter["operation"]}}',
-		description: 'Access 356+ utility APIs, JSON Bins, and Analytics',
+		description: 'Access 387+ utility APIs, JSON Bins, and Analytics',
 		defaults: {
 			name: 'APIVerve',
 		},
@@ -48,7 +48,7 @@ export class APIVerve implements INodeType {
 				type: 'options',
 				noDataExpression: true,
 				options: [
-					{ name: 'API', value: 'api', description: 'Execute any of 356+ utility APIs' },
+					{ name: 'API', value: 'api', description: 'Execute any of 387+ utility APIs' },
 					{ name: 'JSON Bin', value: 'jsonbin', description: 'Store and retrieve JSON data' },
 					{ name: 'Analytics', value: 'analytics', description: 'View usage statistics (Pro+ plans)' },
 				],

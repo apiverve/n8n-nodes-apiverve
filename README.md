@@ -6,7 +6,7 @@
 
 This is an [n8n](https://n8n.io) community node that lets you use [APIVerve](https://apiverve.com) in your n8n workflows.
 
-[APIVerve](https://apiverve.com) provides 356+ fast, reliable utility APIs for validation, conversion, generation, analysis, and lookup operations. One node, hundreds of APIs.
+[APIVerve](https://apiverve.com) provides 387+ fast, reliable utility APIs for validation, conversion, generation, analysis, and lookup operations. One node, hundreds of APIs.
 
 [n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/reference/license/) workflow automation platform.
 
@@ -123,13 +123,13 @@ The APIVerve node provides three resources:
 
 ### API Resource
 
-Execute any of the 356+ available APIs:
+Execute any of the 387+ available APIs:
 
 | Operation | Description |
 |-----------|-------------|
 | **Execute** | Run any APIVerve API with custom parameters |
 
-APIs are organized into 29 categories including:
+APIs are organized into 30 categories including:
 
 - **Validation** — Email, phone, address, credit card, VAT, domain validation
 - **Conversion** — Currency, units, timezone, file format conversion
@@ -137,7 +137,7 @@ APIs are organized into 29 categories including:
 - **Analysis** — Sentiment, language detection, readability, SEO analysis
 - **Lookup** — IP geolocation, DNS, WHOIS, weather, zip codes
 
-[Browse all 356+ APIs →](https://apiverve.com/marketplace)
+[Browse all 387+ APIs →](https://apiverve.com/marketplace)
 
 ### JSON Bin Resource
 
@@ -403,9 +403,7 @@ This node has been tested with:
 
 ## Version History
 
-| Version | Date | Changes |
-|---------|------|---------|
-| 1.0.0 | 2026-07-17 | Initial release with 356+ APIs |
+Release notes for every version are on [GitHub Releases](https://github.com/apiverve/n8n-nodes-apiverve/releases).
 
 ---
 
