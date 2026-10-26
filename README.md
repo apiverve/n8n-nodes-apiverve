@@ -129,7 +129,7 @@ Execute any of the 387+ available APIs:
 |-----------|-------------|
 | **Execute** | Run any APIVerve API with custom parameters |
 
-APIs are organized into 30 categories including:
+APIs are organized into 29 categories including:
 
 - **Validation** — Email, phone, address, credit card, VAT, domain validation
 - **Conversion** — Currency, units, timezone, file format conversion
