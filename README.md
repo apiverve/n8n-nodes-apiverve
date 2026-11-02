@@ -6,7 +6,7 @@
 
 This is an [n8n](https://n8n.io) community node that lets you use [APIVerve](https://apiverve.com) in your n8n workflows.
 
-[APIVerve](https://apiverve.com) provides 387+ fast, reliable utility APIs for validation, conversion, generation, analysis, and lookup operations. One node, hundreds of APIs.
+[APIVerve](https://apiverve.com) provides 388+ fast, reliable utility APIs for validation, conversion, generation, analysis, and lookup operations. One node, hundreds of APIs.
 
 [n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/reference/license/) workflow automation platform.
 
@@ -123,7 +123,7 @@ The APIVerve node provides three resources:
 
 ### API Resource
 
-Execute any of the 387+ available APIs:
+Execute any of the 388+ available APIs:
 
 | Operation | Description |
 |-----------|-------------|
@@ -137,7 +137,7 @@ APIs are organized into 29 categories including:
 - **Analysis** — Sentiment, language detection, readability, SEO analysis
 - **Lookup** — IP geolocation, DNS, WHOIS, weather, zip codes
 
-[Browse all 387+ APIs →](https://apiverve.com/marketplace)
+[Browse all 388+ APIs →](https://apiverve.com/marketplace)
 
 ### JSON Bin Resource
 
